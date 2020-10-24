@@ -1,0 +1,130 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #2c3e50;
+}
+
+#main-wrap {
+	max-width: 1170px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #ecf0f1;
+}
+
+header {
+	height: 50vh;
+	margin-top: 30px;
+}
+
+header .title-box {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+}
+
+header h1 {
+	font-size: 66px;
+}
+
+header h3 {
+	font-size: 22px;
+
+}
+
+#pass-generator .container .password-box {
+	border: 2px solid #c0392b;
+	border-radius: 4px;
+	padding: 20px;
+}
+
+#pass-generator h3 {
+	text-align: center;
+}
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 220px) and (max-width: 480px) {
+	#main-wrap {
+		margin: 0 20px;
+		width: calc(100% - 40px);
+	}
+	header h1 {
+		font-size: 28px;
+		text-align: center;
+	}
+	#pass-generator .container .password-box h2 {
+		font-size: 18px;
+	}
+}
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+	#main-wrap {
+		margin: 0 20px;
+		width: calc(100% - 40px);
+	}
+	header h1 {
+		font-size: 28px;
+		text-align: center;
+	}
+	#pass-generator .container .password-box h2 {
+		font-size: 18px;
+	}
+}
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	#main-wrap {
+		margin: 0 20px;
+		width: calc(100% - 40px);
+	}
+	header h1 {
+		font-size: 48px;
+		text-align: center;
+	}
+	#pass-generator .container .password-box h2 {
+		font-size: 28px;
+	}
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	#main-wrap {
+		margin: 0 20px;
+		width: calc(100% - 40px);
+	}
+	header h1 {
+		font-size: 48px;
+		text-align: center;
+	}
+	#pass-generator .container .password-box h2 {
+		font-size: 28px;
+	}
+}
